@@ -138,7 +138,7 @@ globalThis.LogoCore = (() => {
   const clone=x=>structuredClone(x);
   const common={family:'Anton',fontSize:125,letterSpacing:0,scaleX:1,scaleY:1,rotation:0,dx:0,dy:0,color:'#ffffff',visible:true,locked:false,lockAspect:false};
   const preset={version:1,name:'Thiết kế mẫu',canvas:{width:1254,height:1254,background:'#4b4b4b',transparent:false,lockAspect:true},font:{family:'Anton',weight:400},fonts:[],reference:{bbox:{x:41,y:384,w:1178,h:498},opacity:0.4},
-    arc:{...clone(common),id:'arc',text:'SÁNG TẠO KẾT NỐI VÀ PHÁT TRIỂN',centerX:627,centerY:1005,radius:520,start:180,end:0,offset:50,align:'center',fit:true,bbox:{x:41,y:384,w:1178,h:498}},
+    arc:{...clone(common),id:'arc',fontSize:110,text:'SÁNG TẠO KẾT NỐI VÀ PHÁT TRIỂN',centerX:627,centerY:1005,radius:520,start:180,end:0,offset:50,align:'center',fit:true,bbox:{x:41,y:384,w:1178,h:498}},
     horizontal:{...clone(common),id:'horizontal',text:'LOGO STUDIO',fontSize:180,x:281,y:864,fit:true,align:'left',bbox:{x:281,y:711,w:694,h:153}},
     view:{guides:false,grid:false,target:false,reference:true},export:{crop:true,padding:24,transparent:true,scale:2,outline:true}};
   function freeze(x){Object.values(x).forEach(v=>{if(v&&typeof v==='object')freeze(v)});return Object.freeze(x)}freeze(preset);
