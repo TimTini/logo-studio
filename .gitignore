@@ -1,0 +1,16 @@
+node_modules/
+*.tar
+*.zip
+test-*.svg
+test-*.png
+test-*.json
+mobile-preview.png
+preview.png
+snap-preview.png
+.env
+.env.*
+.openai/
+*.pem
+*.key
+work/
+backup/
